@@ -23,30 +23,21 @@
 
 <!-- Installation -->
 ## Installation
-
-### Install with DockerHub
-
-1. If you want to install on DockerHub, just type this command.
-   ```sh
-    docker run --name vulnlab -d -p 1337:80 yavuzlar/vulnlab:latest
-   ```
-2. Go to http://localhost:1337
-
 ### Manuel Installation
 
 1. Clone the repo
    ```sh
-    git clone https://github.com/Yavuzlar/VulnLab
+    git clone https://github.com/yenerhuseyin/bestclouldcase/
    ```
 2. Build docker image
    ```sh
-    docker build -t yavuzlar/vulnlab .
+    docker build -t  yenerhuseyin/bestclouldcase .
    ```
 3. Run container
    ```sh
-    docker run -d -p 1337:80 yavuzlar/vulnlab
+    docker run -d -p 9000:80 yenerhuseyin/bestclouldcase/
    ```
-4. Go to http://localhost:1337
+4. Go to http://localhost:9000
 
 <!-- CONTACT -->
 ## Contact
