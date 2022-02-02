@@ -31,11 +31,11 @@
    ```
 2. Build docker image
    ```sh
-    docker build -t  yenerhuseyin/bestclouldcase .
+    docker build -t  19786767/bestclouldcase
    ```
 3. Run container
    ```sh
-    docker run -d -p 9000:80 yenerhuseyin/bestclouldcase/
+    docker run -d -p 9000:80 19786767/bestclouldcase
    ```
 4. Go to http://localhost:9000
 
