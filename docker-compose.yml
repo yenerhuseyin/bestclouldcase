@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  php-apache-environment:
+    container_name: deneme
+    depends_on:
+            - db
+    image: php:8.0-apache
+    volumes:
+      - ./php/src:/var/www/html/
+    ports:
+      - 9000:80
+  mysql_db:
+        container_name: db
+        image: mysql
+        restart: always
+        environment:
+             MYSQL_ROOT_PASSWORD: root
+             MYSQL_DATABASE: data
+             
+             MYSQL_PASSWORD: root
+      
+  phpmyadmin:
+        image: phpmyadmin:latest
+        restart: always
+        ports :
+            - 9001:80
+        environment:
+        - PMA_ARBITRARY=1
+
+
+
+    
