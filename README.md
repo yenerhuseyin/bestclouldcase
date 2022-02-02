@@ -23,6 +23,15 @@
 
 <!-- Installation -->
 ## Installation
+
+### Install with DockerHub
+
+1. If you want to install on DockerHub, just type this command.
+   ```sh
+    docker run --name best -d -p 1337:80 19786767/bestclould:latest
+   ```
+2. Go to http://localhost:1337
+
 ### Manuel Installation
 
 1. Clone the repo
@@ -31,11 +40,11 @@
    ```
 2. Build docker image
    ```sh
-    docker build -t  19786767/bestclouldcase
+    docker build -t  19786767/bestclould
    ```
 3. Run container
    ```sh
-    docker run -d -p 9000:80 19786767/bestclouldcase
+    docker run -d -p 9000:80 19786767/bestclould
    ```
 4. Go to http://localhost:9000
 
